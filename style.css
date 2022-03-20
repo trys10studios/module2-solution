@@ -1,50 +1,47 @@
-* {
-	box-sizing: border-box;
-}
 h1{
 	text-align: center;
 	width: 100%;
 	margin-bottom: 15px;
 }
 p{
-	text-align: left;
-	width: 33.3%;
-	height: 33.3%;
-	border: 3px solid black;
-	margin: auto;
-	float: right;
+	text-align: center;
+	width: 80%;
+	height: 25%;
+	padding-left: 15px;
+	align-content: center;
 }
 section{
-	text-align: right;
-	margin-right: 30px;
+	text-align: center;
+	padding-right: 15px;
+	margin-top: auto;
+	margin-left: auto;
+	border: solid black;
+	width: 25%;
 }
 .row {
 	width: 100%;
 }
 
-/* Desktop: On screens that are 1200px wide or less, go from three columns to two columns */
+/* Desktop: On screens that are 992px wide or less, go from three columns to two columns */
 @media (min-width: 992px) {
   .col-lg {
   		float: left;
   		border: 3px solid black;
-		width: 100%
-		margin: auto;
+		width: 25%
 	}
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	.col-md {
 		float: left;
 		border: 3px solid black;
-		width: 100%
-		margin: auto;
+		width: 33.3%;
 	}  
 }
-@media (min-width 767px) and (min-width: 0px) {
+@media (max-width 767px) and (min-width 0px)) {
 	.col-sm {
 		float: left;
 		border: 3px solid black;
-		width: 100%
-		margin: auto;
+		width: 100%;
 	}
 }
 
