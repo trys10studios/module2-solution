@@ -1,36 +1,51 @@
+* {
+	box-sizing: border-box;
+}
 h1{
 	text-align: center;
 	width: 100%;
-	border: 3px;
 	margin-bottom: 15px;
 }
 p{
-	align-content: center;
-	text-align: center;
-	width: 100%;
+	text-align: left;
+	width: 33.3%;
+	height: 33.3%;
+	border: 3px solid black;
+	margin: auto;
+	float: right;
+}
+section{
+	text-align: right;
+	margin-right: 30px;
 }
 .row {
-	border: 3px solid black;
-	text-align: right;
-	width: 33%;
-	float: left;
+	width: 100%;
 }
 
-/* Desktop: On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-  .columnDesktop {
-	width: 100%;
-  }
+/* Desktop: On screens that are 1200px wide or less, go from three columns to two columns */
+@media (min-width: 992px) {
+  .col-lg {
+  		float: left;
+  		border: 3px solid black;
+		width: 100%
+		margin: auto;
+	}
 }
-/* Tablet: On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 991px ) and (min-width:  768px) {
-  .columnTablet {
-    width: 50%;
-  }
+@media (max-width: 991px) and (min-width: 768px) {
+	.col-md {
+		float: left;
+		border: 3px solid black;
+		width: 100%
+		margin: auto;
+	}  
 }
-/* Mobile: On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen (min-width: 767px) {
-  .columnMobile {
-    width: 50%;
-  }
+@media (min-width 767px) and (min-width: 0px) {
+	.col-sm {
+		float: left;
+		border: 3px solid black;
+		width: 100%
+		margin: auto;
+	}
 }
+
+
