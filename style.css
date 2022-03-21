@@ -1,47 +1,81 @@
-h1{
+h1 {
 	text-align: center;
 	width: 100%;
 	margin-bottom: 15px;
 }
-p{
+p {
 	text-align: center;
-	width: 80%;
-	height: 25%;
 	padding-left: 15px;
-	align-content: center;
 }
-section{
+.chickenContainer {
+	padding-left: 15px;
+	margin-top: 15px;
+	border: 1px solid black;
+	width: 50%;
+}
+.beefContainer {
+	padding-left: 15px;
+	margin-top: 15px;
+	border: 1px solid black;
+	width: 50%;
+}
+.sushiContainer {
+	padding-left: 15px;
+	margin-top: 15px;
+	border: 1px solid black;
+}
+.chicken {
+	float: right;
+	background-color: lightyellow;
 	text-align: center;
 	padding-right: 15px;
 	margin-top: auto;
 	margin-left: auto;
-	border: solid black;
+	border: 1px solid black;
 	width: 25%;
 }
-.row {
-	width: 100%;
+.beef {
+	float: right;
+	background-color: indianred;
+	text-align: center;
+	padding-right: 15px;
+	margin-top: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	width: 25%;
+}
+.sushi {
+	float: right;
+	background-color: lightseagreen;
+	text-align: center;
+	padding-right: 15px;
+	margin-top: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	width: 25%;
 }
 
 /* Desktop: On screens that are 992px wide or less, go from three columns to two columns */
 @media (min-width: 992px) {
   .col-lg {
   		float: left;
-  		border: 3px solid black;
-		width: 25%
+  		display: inline;
+  		margin-right: 15px;
+  		margin-top: 15px;
+  		width: 50%
 	}
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	.col-md {
-		float: left;
-		border: 3px solid black;
-		width: 33.3%;
+		  display: inline;
+			margin-right: 15px;
+			margin-top: 15px;
+			width: 100%;
 	}  
 }
-@media (max-width 767px) and (min-width 0px)) {
+@media (min-width 767px) {
 	.col-sm {
-		float: left;
-		border: 3px solid black;
-		width: 100%;
+			width: 100%;
 	}
 }
 
